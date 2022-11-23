@@ -10,3 +10,5 @@ z = int(input('Enter Z = '))
 
 if (x != x or y != y or z != z) == (x != x and y != y and z != z):
     print(True)
+else:
+    print(False)
