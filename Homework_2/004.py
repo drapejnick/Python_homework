@@ -7,15 +7,11 @@
 # -3 * -1 * 0 = 0
 # Вывод: 0
 
+n = int(input('Введите число: '))
+for i in range(-n, n+1):
+    print(i, end=' ')
 
-# n = int(input('Введите число: '))
-# for i in range(-n, n+1):
-#     print(i, end=' ')
-
-from math import prod
-
-arr = [int(input('Введите элемент списка: '))
-       for i in range(int(input('Введите длину списка: ')))]
-print(f'Весь список: {arr}')
-print(f'Сумма элементов списка равна: {sum(arr)}')
-print(f'Произведение элементов списка: {prod(arr)}')
+mult_n = 1
+for i in range(n):
+    mult_n *= i
+print(mult_n)

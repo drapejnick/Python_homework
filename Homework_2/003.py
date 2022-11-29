@@ -6,6 +6,5 @@ n = int(input("Введите число: "))
 summ = 0
 
 for i in range(1, n+1):
-    res = round((1 + 1 / n)**n, 2)
-    summ = summ + res
-print(summ, end=' ')
+    summ += (1+1/i)**i
+print(f'Сумма равна {round(summ,2)}')
