@@ -5,8 +5,5 @@
 # Вывод: [2, 3]
 
 import itertools
-lst = list(map(int, input("Введите числа через пробел:\n").split()))
-print(f"Исходный список: {lst}")
-
-r = set(lst)
-print('set:', r)
+lst = list(map(int, input("Введите числа через пробел: ").split()))
+print(f"Исходный список: {lst}\n Итоговый список: {set(lst)}")
